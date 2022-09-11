@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  servicename:    # fill this in with something meaningful
+    image: image  # whatever it is you want to deploy
+
+    volumes:      # Add what you need here
+
+    ports:        # Ditto
+       
+# Any any other services you need
+
+volumes:
