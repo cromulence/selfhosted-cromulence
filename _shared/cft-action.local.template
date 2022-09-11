@@ -1,0 +1,12 @@
+[Init]
+
+# Option: cfuser
+# Notes.: Replaces <cfuser> in actionban and actionunban with cfuser value below
+# Values: Your CloudFlare user account
+
+cfuser = 
+
+# Option: cftoken (Global API Key)
+# Notes.: Replaces <cftoken> in actionban and actionunban with cftoken value below
+# Values: Your CloudFlare API key
+cftoken = 
