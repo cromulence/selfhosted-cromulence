@@ -1,0 +1,10 @@
+[nginx-jail]
+
+enabled   = true
+filter    = nginx-filter
+port      = http,https
+logpath   = /var/log/nginx/app_access.log
+maxretry  = 25
+bantime   = 15m
+findtime  = 5m
+action    = cft-action
