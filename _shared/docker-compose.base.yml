@@ -21,10 +21,11 @@ services:
     image: crazymax/fail2ban
     restart: unless-stopped
     volumes:
-      - "./fail2ban-data:/data"
+      - "./fail2ban-config:/data"
+      - "fail2ban-db:/data/db"
       - "./nginx-action.local:/data/action.d/nginx-action.local"
       - "nginx-logs:/var/log/nginx:ro"
 
 volumes:
   nginx-logs:
-  fail2ban-data:
+  fail2ban-db:
