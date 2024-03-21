@@ -1,0 +1,19 @@
+[200~version: "3.3"
+
+services:
+
+  stfpgo:
+    image: "drakkan/sftpgo:latest"
+    environment:
+      SFTPGO_GRACE_TIME: "32"
+    volumes:
+      - "sftpgodata:/srv/sftpgo"
+      - "sftpgohome:/var/lib/sftpgo"
+    ports:
+      - "8080:8080"
+      - "2022:2022"
+
+volumes:
+  sftpgodata:
+  sftpgohome:
+
